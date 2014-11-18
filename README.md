@@ -9,7 +9,7 @@ windowList-plugin-gnome-do
 
 3. 快速关闭 (CloseAction)
 
-
+4. 关闭当前窗口(CloseCurrentAction)
 
 
 
