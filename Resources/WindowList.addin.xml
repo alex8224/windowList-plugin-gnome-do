@@ -5,7 +5,7 @@
 	name="Window List Manager"
 	description="Control your windows or groups of windows with Do."
 	author="Alex zhang"
-	category="Official"
+	category="Community"
 	defaultEnabled="false"
     url="http://do.davebsd.com/wiki/Window_List_Manager_Plugin"
 	>
