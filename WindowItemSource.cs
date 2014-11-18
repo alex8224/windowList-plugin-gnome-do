@@ -1,5 +1,5 @@
 // 
-//  WindowList.cs
+// WindowItemSource.cs
 //  
 //  Author:
 //       Alex Zhang <alex8224@gmail.com>
@@ -99,7 +99,7 @@ namespace WindowList
 
 			lock(windowlist) {
 				Screen.Default.ForceUpdate ();
-				foreach (Window win in Screen.Default.WindowsStacked) {
+				foreach (Window win in Utils.GetWindows()) {
 					Log.Debug ("title is {0}, pid is {1}, processname is {2}", win.Name, win.Application.Pid, win.Application.Name);
 					String iconpath = String.Format ("/tmp/{0}.png", win.Application.Pid);
 					win.Icon.Save (iconpath, "png");

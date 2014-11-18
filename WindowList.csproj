@@ -62,6 +62,8 @@
     <Compile Include="WindowItemSource.cs" />
     <Compile Include="CloseAction.cs" />
     <Compile Include="ActivateAction.cs" />
+    <Compile Include="CloseCurrentAction.cs" />
+    <Compile Include="Utils.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

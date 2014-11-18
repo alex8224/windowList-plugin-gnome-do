@@ -1,5 +1,5 @@
 // 
-//  WindowList.cs
+//  WindowItem.cs
 //  
 //  Author:
 //       Alex Zhang <alex8224@gmail.com>
@@ -36,7 +36,7 @@ namespace WindowList
 		public void LaunchWithFiles (IEnumerable<IFileItem> files) {;}
 
 		public void Run(){
-			WindowItem.Activethis(this);
+			Utils.ActiveWindow (window);
 		}
 
 		public override string Name {
@@ -75,14 +75,6 @@ namespace WindowList
 			get {
 				return (uint)(DateTime.Now.ToUniversalTime () - new DateTime (1970, 1, 1)).TotalSeconds;
 			}
-		}
-			
-		public static void Activethis(WindowItem win) {
-			win.MyWindow.Activate(win.Timestamp);
-		}
-
-		public static void Closethis(WindowItem win) {
-			win.MyWindow.Close (win.Timestamp);
 		}
 	}
 }

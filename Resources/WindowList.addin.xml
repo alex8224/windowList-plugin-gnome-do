@@ -24,6 +24,7 @@
 	<Extension path="/Do/Action">
 		<Action type="WindowList.ActivateAction" />
 		<Action type="WindowList.CloseAction" />
+		<Action type="WindowList.CloseCurrentAction" />
 	</Extension>
 	
 	<Extension path="/Do/DynamicItemSource">
