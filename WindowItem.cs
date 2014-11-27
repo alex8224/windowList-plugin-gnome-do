@@ -41,7 +41,7 @@ namespace WindowList
 
 		public override string Name {
 			get {
-				return String.Format ("{0} - {1}", window.Name, window.Application.Name);
+				return String.Format ("{0} - {1} -- window", window.Name, window.Application.Name);
 			}
 		}
 
